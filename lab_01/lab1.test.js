@@ -13,7 +13,7 @@ console.log(lab1.questionTwo(-22, -4.5, 2)); // Returns and then outputs 77
 console.log(lab1.questionTwo(512, 1007, -5)); //Returns and then outputs NaN
 console.log(lab1.questionTwo(2, 0, 4)); //Returns and then outputs 0
 console.log(lab1.questionTwo(0, 3, -5)); //Returns and then outputs NaN
-console.log(lab1.questionTwo(10, -5.5, 4)); //Returns and then outputs -1406.25
+console.log(lab1.questionTwo(10, -5.5, 4.6)); //Returns and then outputs NaN
 
 //testing questionThree
 console.log(lab1.questionThree("I am going to give him an offer that he won't refuse"));  // Returns and then outputs 23
