@@ -1,5 +1,4 @@
 function questionOne(arr) {
-  // TODO: Implement question 1 here
   
   const originalArray = arr;
   let resultArray = [];
@@ -34,7 +33,7 @@ function questionOne(arr) {
 
 
 function questionTwo(startingNumber, commonRatio, numberOfTerms) {
-  // TODO: Implement question 2 here
+
   let a = startingNumber;
   let r = commonRatio;
   let terms = numberOfTerms;
@@ -43,17 +42,18 @@ function questionTwo(startingNumber, commonRatio, numberOfTerms) {
   if(terms <= 0 || terms % 1 != 0){
     return NaN;
   }
-  
+
   if(a == 0 || r == 0){
     return 0;
   }
 
+  //mathematical equation for geometric sum
   return (a * ((1- Math.pow(r, terms))/(1 - r)));
 }
 
 
 function questionThree(str) {
-  // TODO: Implement question 3 here
+
   let phrase = str;
   let count = 0;
   const vowels = {
@@ -70,27 +70,28 @@ function questionThree(str) {
   }
 
   for(let x = 0; x < phrase.length; x++){
+
     if((65 <= phrase.charCodeAt(x) && phrase.charCodeAt(x) <= 90)){
       count++;
     }
-
     if((97 <= phrase.charCodeAt(x) && phrase.charCodeAt(x) <= 122)){
       count++;
     }
-
+    //loop through object list of vowels
     for(const vowel in vowels){
       if(vowels[vowel] === phrase.charCodeAt(x)){
         count--;
         break;
       }
     }
+    
   }
   return count;
 }
 
 
 function questionFour(fullString, substring) {
-  // TODO: Implement question 4 here
+
   let full = fullString;
   let sub = substring;
   let length = sub.length;
