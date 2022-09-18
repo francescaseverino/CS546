@@ -17,7 +17,7 @@ function questionOne(arr) {
     } 
     
     //if not prime, one of its factors is less than sqrt of that num
-    for(let x = 5; x < Math.sqrt(num); x += 6){
+    for(let x = 5; x <= Math.sqrt(num); x += 6){
       if(num % x == 0 || num % (x + 2) == 0){
         resultArray.push(false);
         break;
