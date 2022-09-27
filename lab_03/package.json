@@ -1,0 +1,14 @@
+{
+  "name": "lab_03",
+  "version": "1.0.0",
+  "description": "Lab 3 - Asynchronous Programming",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Francesca Severino 10444975",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
