@@ -1,0 +1,14 @@
+{
+  "name": "lab_04",
+  "version": "1.0.0",
+  "description": "Lab 4 - MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Francesca Severino 10444975",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^4.10.0"
+  }
+}
