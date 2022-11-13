@@ -1,0 +1,10 @@
+/*
+You will style your page using at least 10 CSS selectors for general CSS styling. You will place the CSS in its own file. You must style the is-green class to make text have a color of #00E676 and is-red class to make text have a color of #FF3D00.
+*/
+.is-green{
+    color:#00E676;
+}
+
+.is-red{
+    color:#FF3D00;
+}
