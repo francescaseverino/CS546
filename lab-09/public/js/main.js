@@ -26,7 +26,7 @@ Using JavaScript in your browser only, you will listen for the form's submit eve
         let temp = input;
         if(!temp.includes('[') || !temp.includes(']')){return false}
         while(temp.includes('],')){
-            temp = temp.replace('],', '] ').split(' ');
+            temp = temp.replace('],', '] ').split(' ').filter(Boolean);
             for(let x = 0; x < temp.length; x++){
                 if(!temp[x].includes('[') || !temp[x].includes(']')){return false}
             }
@@ -40,7 +40,7 @@ Using JavaScript in your browser only, you will listen for the form's submit eve
             temp = temp.replace('],', '');
             count++;
         }
-    
+        console.log(count);
         // setting up for checking each element
         input = input.replaceAll('],', '] ').trim().replaceAll('[', '').replaceAll('[', '').split(']').filter(Boolean);
     
