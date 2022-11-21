@@ -65,7 +65,7 @@ router
       }
     } catch(e){
       return res.status(500).render('userRegister', {
-        error: "Internal Server Error"
+        error: e
       });
     }
 
