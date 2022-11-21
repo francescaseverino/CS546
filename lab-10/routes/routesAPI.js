@@ -10,7 +10,7 @@ router
 
     if(req.session.user){
       res.redirect('/protected');
-    } else{
+    } else {
       res.render('userLogin');
     }
 
@@ -134,8 +134,7 @@ router
     } else{
       res.redirect('/');
     }
-
-
+    
   })
 
 module.exports = router;
